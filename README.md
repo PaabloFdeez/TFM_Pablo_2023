@@ -37,7 +37,7 @@ This document explains how to merge the presence-absence matrix provided by PPan
 The following code makes use of the general annotation matrices (Supplementary File 1) to carry out a representation of the genomes of both families according to the genome type imposed by PPanGGolin.
 
 ### Supplementary File 7
-Graphical representation of the genomes based on the SupplementaryFile4 annotation.
+Graphical representation of the genomes based on the Supplementary File 4 annotation.
 
 ### Supplementary File 8
 The results obtained by SAPPHIRE are used and represented through a barplot.
