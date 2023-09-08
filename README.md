@@ -34,10 +34,10 @@ This script uses the functionalities of Bakta to detect the 16s rRNA genes of th
 This document explains how to merge the presence-absence matrix provided by PPanGGolin with the annotation of the reference genomes obtained from GenBank.
 
 ### Supplementary File 6
-The following code makes use of the general annotation matrices (Supplementary File 1) to carry out a representation of the genomes of both families according to the genome type imposed by PPanGGolin.
+The following code makes use of the general annotation matrices (Supplementary File 1) to carry out a representation of the genomes of both families according to the genome type imposed by PPanGGolin. Associated to Fig. 2 of the article
 
 ### Supplementary File 7
-Graphical representation of the genomes based on the Supplementary File 4 annotation.
+Graphical representation of the genomes based on the Supplementary File 4 annotation. Associated to Fig. 4A of the article
 
 ### Supplementary File 8
-The results obtained by SAPPHIRE are used and represented through a barplot.
+The results obtained by SAPPHIRE are used and represented through a barplot. Associated to Fig 5. of the article.
