@@ -6,10 +6,11 @@ library("dplyr")
 library(tidyverse)
 library(reshape2)
 
-
+#Output obtenido a través de SAPPHIRE
 datos <- read_csv("/home/paablofdeez/TFM/sapphire_resultados/thermus/finales.csv")
 names(datos) <- c("Locus_tag","Termofilia","Valor_Termofilia")
 
+#SupplementaryFile1_1
 thermus <- read_excel("/home/paablofdeez/TFM/matriz_general/Thermus/matrizglobalthermus.xlsx")
 
 

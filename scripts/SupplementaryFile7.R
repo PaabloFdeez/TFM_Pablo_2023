@@ -9,6 +9,7 @@ library(ggtext)
 
 #Cargamos los datos de Thermaceae, eliminamos columnas innecesarias y renombramos
 
+#SupplementaryFile4_1
 thermus <- read_excel("/home/paablofdeez/TFM/matriz_general/Thermus/ThermusMatrizGlobal_AnotacionKEGG.xlsx")
 thermus <- subset(thermus, select=-2)
 colnames(thermus)[colnames(thermus) == "Gene.y"] <- "Family"
@@ -104,7 +105,8 @@ print(plot_thermus)
 
 #DEINOCOCCUS
 
-deinococcus <- read.csv("/home/paablofdeez/TFM/matriz_general/Deinococcus/NUEVAMATRIZDEINO.csv")
+#SupplementaryFile5_2
+deinococcus <- read.csv("/home/paablofdeez/TFM/matriz_general/Deinococcus/matrizkeggdeinococcus.csv")
 
 
 deinococcus_cluster <- subset(deinococcus,!duplicated(Family))
@@ -207,36 +209,4 @@ grid.arrange(plot_thermus,plot_deinococcus,ncol=2)
 
 
 
-
-
-filtered_combinaciones <-  thermus_cluster[!is.na(thermus_cluster$KO_Function), ]
-
-filtered_combinaciones <- thermus_cluster
-
-metabolismo <- filtered_combinaciones %>%
-  filter(General_Function=="Metabolism")
-
-gip <- filtered_combinaciones %>%
-  filter(General_Function=="Genetic Information Processing")
-
-gip2 <- filtered_combinaciones%>%
-  filter(Function_1=="Protein families: genetic information processing")
-
-environmetal <- filtered_combinaciones %>%
-  filter(General_Function=="Environmental Information Processing")
-
-cellular <- filtered_combinaciones%>%
-  filter(General_Function=="Cellular Processes")
-
-organismal <- filtered_combinaciones %>%
-  filter(General_Function=="Organismal Systems")
-
-human <- filtered_combinaciones %>%
-  filter(General_Function=="Human Diseases")
-
-not <- filtered_combinaciones %>%
-  filter(General_Function=="Not Included in Pathway or Brite")
-
-brite <- filtered_combinaciones %>%
-  filter(General_Function=="Brite Hierarchies")
 

@@ -6,6 +6,8 @@ library(tidyverse)
 library(reshape2)
 
 #Lectura del data frame y preprocesamiento de los datos
+
+#SupplementaryFile1_1
 thermus <- read_excel('/home/paablofdeez/TFM/matriz_general/Thermus/matrizglobalthermus.xlsx')
 thermus <- subset(thermus, select=-14)
 thermus <- subset(thermus, select=-6)
@@ -15,6 +17,8 @@ names(thermus) <- c("Numero","Start","Stop","SequenceID","Type","Locus_Tag","Gen
 thermus_cluster <- subset(thermus, !duplicated(Family))
 
 #Lectura del data frame y preprocesamiento de los datos
+
+#SupplementaryFile1_2
 deinococcus <- read_excel('/home/paablofdeez/TFM/matriz_general/Deinococcus/matrizdeino.xlsx')
 deinococcus <- subset(deinococcus, select=-6)
 deinococcus <- subset(deinococcus, select=-14)

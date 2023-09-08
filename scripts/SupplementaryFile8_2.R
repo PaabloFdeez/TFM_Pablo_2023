@@ -6,10 +6,11 @@ library("dplyr")
 library(tidyverse)
 library(reshape2)
 
-
+#Datos obtenidos a través de SAPPHIRE
 datos <- read_csv("/home/paablofdeez/TFM/sapphire_resultados/deinococcus/finales.csv")
 names(datos) <- c("ID proteina","Termofilia","Valor_Termofilia")
 
+#SupplementaryFile1_2
 deinococcus <- read_xlsx('/home/paablofdeez/TFM/matriz_general/Deinococcus/nuevamatriz/archivo_fasta_bakta/fastabaktaxlsx.xlsx')
 ppanggolin <- read_xlsx('/home/paablofdeez/TFM/matriz_general/Deinococcus/nuevamatriz/archivos_ppanggolin/fastas_ppanggolin.xlsx')
 ppanggolin <- subset(ppanggolin,select=c(3,4,8))
